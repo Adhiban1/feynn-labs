@@ -18,7 +18,7 @@ call .venv\Scripts\activate
 
 echo.
 echo "Upgrading pip..."
-pip install --upgrade pip
+python.exe -m pip install --upgrade pip
 
 echo.
 echo "Installing requirements..."
