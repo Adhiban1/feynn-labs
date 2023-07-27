@@ -6,6 +6,9 @@ with open('models/is_failure.pkl', 'rb') as f:
     model = pickle.load(f)
 
 def is_failure(x):
+    x = x[['Type', 'Air temperature [K]',
+       'Process temperature [K]', 'Rotational speed [rpm]', 'Torque [Nm]',
+       'Tool wear [min]']]
     df1 = pd.get_dummies(x, columns=['Type'])
     df1[['Type_H', 'Type_L', 'Type_M']] = df1[['Type_H', 'Type_L', 'Type_M']].astype(int)
     return model.predict(df1)
@@ -18,6 +21,9 @@ with open('models/encoding.pkl', 'rb') as f:
     inverse = pickle.load(f)
 
 def failure_type(x):
+    x = x[['Type', 'Air temperature [K]',
+       'Process temperature [K]', 'Rotational speed [rpm]', 'Torque [Nm]',
+       'Tool wear [min]']]
     df1 = pd.get_dummies(x, columns=['Type'])
     df1[['Type_H', 'Type_L', 'Type_M']] = df1[['Type_H', 'Type_L', 'Type_M']].astype(int)
     prediction = model2.predict(df1)

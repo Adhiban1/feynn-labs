@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-size: 120%;
+        }
+        input {
+            font-size: 100%;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Machine Predictive Maintenance</h1>
+        <p>Upload a csv file with these columns<br>['Type', 'Air temperature [K]',
+            'Process temperature [K]', 'Rotational speed [rpm]', 'Torque [Nm]',
+            'Tool wear [min]']</p>
+        <form action="/" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" id="file">
+            <input type="submit" id="submit">
+        </form>
+    </center>
+</body>
+</html>
