@@ -1,4 +1,4 @@
-# Machine Predictive Maintenance
+# Machine Predictive Maintenance for Industrial Machines
 
 [Dataset Kaggle link](https://www.kaggle.com/datasets/shivamb/machine-predictive-maintenance-classification)
 
@@ -69,3 +69,48 @@ You can run above commands one by one or you can use `run_all.sh` for linux or `
 > One you run `run_all` file, then don't run again to open flask app again. Just run `python app.py`.
 
 ![Screenshot1.jpg](Screenshot1.jpg)
+
+## Input Data
+
+```python
+>>> df = pd.read_csv('predictive_maintenance.csv')
+>>> df.head()
+   UDI Product ID Type  Air temperature [K]  ...  Torque [Nm]  Tool wear [min]  Target  Failure Type
+0    1     M14860    M                298.1  ...         42.8                0       0    No Failure
+1    2     L47181    L                298.2  ...         46.3                3       0    No Failure
+2    3     L47182    L                298.1  ...         49.4                5       0    No Failure
+3    4     L47183    L                298.2  ...         39.5                7       0    No Failure
+4    5     L47184    L                298.2  ...         40.0                9       0    No Failure
+
+[5 rows x 10 columns]
+>>> df.columns
+Index(['UDI', 'Product ID', 'Type', 'Air temperature [K]',
+       'Process temperature [K]', 'Rotational speed [rpm]', 'Torque [Nm]',
+       'Tool wear [min]', 'Target', 'Failure Type'],
+      dtype='object')
+```
+
+## Output Data
+
+```python
+>>> output = pd.read_csv('output.csv')
+>>> output.head()
+   UDI Product ID Type  ...  Failure Type  is_failure  failure_type
+0    1     M14860    M  ...    No Failure           0    No Failure
+1    2     L47181    L  ...    No Failure           0    No Failure
+2    3     L47182    L  ...    No Failure           0    No Failure
+3    4     L47183    L  ...    No Failure           0    No Failure
+4    5     L47184    L  ...    No Failure           0    No Failure
+
+[5 rows x 12 columns]
+>>> output.columns
+Index(['UDI', 'Product ID', 'Type', 'Air temperature [K]',
+       'Process temperature [K]', 'Rotational speed [rpm]', 'Torque [Nm]',
+       'Tool wear [min]', 'Target', 'Failure Type', 'is_failure',
+       'failure_type'],
+      dtype='object')
+```
+
+Here `Failure Type`, `is_failure` columns are added in `output.csv`
+
+> I give the same training dataset to the Flask app to check whether it predicts correct or not. Thats why `Target`, `Failure Type` and other columns are displayed in the terminal output.
