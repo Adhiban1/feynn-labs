@@ -2,8 +2,6 @@
 
 [Dataset Kaggle link](https://www.kaggle.com/datasets/shivamb/machine-predictive-maintenance-classification)
 
-![Screenshot1.jpg](Screenshot1.jpg)
-
 ## Download Repository
 
 ```
@@ -63,3 +61,5 @@ Run `app.py` to open Web app
 ```
 python app.py
 ```
+
+![Screenshot1.jpg](Screenshot1.jpg)
