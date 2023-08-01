@@ -53,7 +53,7 @@ python train.py
 Run `test.py` to verify saved models work well
 
 ```
-python.test.py
+python test.py
 ```
 
 ## App

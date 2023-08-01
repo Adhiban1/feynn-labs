@@ -27,7 +27,7 @@ python train.py
 
 echo ""
 echo "Testing the model..."
-python.test.py
+python test.py
 
 echo ""
 echo "Opening Flask App..."
