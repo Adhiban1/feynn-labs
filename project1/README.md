@@ -1,6 +1,8 @@
 # Machine Predictive Maintenance for Industrial Machines
 
-[Dataset Kaggle link](https://www.kaggle.com/datasets/shivamb/machine-predictive-maintenance-classification)
+EDA and Machine Learning: [Jupyter Notebook](main.ipynb) 
+
+Dataset link: [Kaggle Dataset](https://www.kaggle.com/datasets/shivamb/machine-predictive-maintenance-classification)
 
 ## Download Repository
 
