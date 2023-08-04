@@ -1,34 +1,41 @@
+@echo off
+
+cls
 echo "Git Cloning..."
-git clone https://github.com/Adhiban1/feynn-labs.git
+git clone --depth 1 https://github.com/Adhiban1/feynn-labs.git
 
-echo ""
+echo.
 echo "cd feynn-labs/project1..."
-cd feynn-labs/project1
+cd feynn-labs\project1
 
-echo ""
+echo.
 echo "Creating python virtual environment..."
 python -m venv .venv
 
-echo ""
+echo.
 echo "Activating virtual environment..."
-source .venv/bin/activate
+call .venv\Scripts\activate
 
-echo ""
+echo.
 echo "Upgrading pip..."
-pip install --upgrade pip
+python.exe -m pip install --upgrade pip
 
-echo ""
+echo.
 echo "Installing requirements..."
 pip install -r requirements.txt
 
-echo ""
-echo "Traing the model..."
+echo.
+echo "Training the model..."
 python train.py
 
-echo ""
+echo.
 echo "Testing the model..."
 python test.py
 
-echo ""
+echo.
 echo "Opening Flask App..."
 python app.py
+
+echo.
+echo "Deactivating virtual environment..."
+deactivate

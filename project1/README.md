@@ -7,7 +7,7 @@ Dataset link: [Kaggle Dataset](https://www.kaggle.com/datasets/shivamb/machine-p
 ## Download Repository
 
 ```
-git clone https://github.com/Adhiban1/feynn-labs.git
+git clone --depth 1 https://github.com/Adhiban1/feynn-labs.git
 ```
 
 ## Change directory
@@ -66,9 +66,9 @@ python app.py
 
 ## Run all
 
-You can run above commands one by one or you can use `run_all.sh` for linux or `run_all.bat` for windows. You should modify the code in run_all.sh or run_all.bat file for your cases. And then run this one file this will download repository, change directory, creating virtual environment, activating virtual environment, upgrading pip, installing requirements, training the model, testing the model, opening Flask App.
+You can run above commands one by one or you can use `setup.sh` for linux or `setup.bat` for windows. You should modify the code in setup.sh or setup.bat file for your cases. And then run this one file this will download repository, change directory, creating virtual environment, activating virtual environment, upgrading pip, installing requirements, training the model, testing the model, opening Flask App.
 
-> One you run `run_all` file, then don't run again to open flask app again. Just run `python app.py`.
+> One you run `setup` file, then don't run again to open flask app again. Just run `python app.py`.
 
 ![Screenshot1.jpg](Screenshot1.jpg)
 
