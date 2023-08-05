@@ -20,7 +20,7 @@ def home():
 
         df.to_csv('src/uploaded/output.csv', index=False)
 
-        return send_file('src/uploaded/output.csv', as_attachment=True)
+        return send_file('uploaded/output.csv', as_attachment=True)
     return render_template('index.html')
 
 if __name__ == '__main__':
