@@ -64,15 +64,40 @@ Run `app.py` to open Web app
 python app.py
 ```
 
-## Run all
+# Setup
 
 You can run above commands one by one or you can use `setup.sh` for linux or `setup.bat` for windows. You should modify the code in setup.sh or setup.bat file for your cases. And then run this one file this will download repository, change directory, creating virtual environment, activating virtual environment, upgrading pip, installing requirements, training the model, testing the model, opening Flask App.
 
-> One you run `setup` file, then don't run again to open flask app again. Just run `python app.py`.
+> Once you run `setup` file, then don't run again to open flask app. Just run `run.bat` for windows or `./run.sh` for linux or you can activate `.venv` manually and run `app.py`.
+
+## Windows
+
+```
+D:\test>dir
+setup.bat
+
+D:\test>setup.bat
+"Git Cloning..."
+Cloning into 'feynn-labs'...
+...
+...
+```
+
+## Linux
+
+```
+adhiban@DESKTOP:/test$ ls
+setup.sh
+adhiban@DESKTOP:/test$ bash setup.sh
+Git Cloning...
+Cloning into 'feynn-labs'...
+...
+...
+```
 
 ![Screenshot1.jpg](Screenshot1.jpg)
 
-## Input Data
+# Input Data
 
 ```python
 >>> df = pd.read_csv('predictive_maintenance.csv')
@@ -92,7 +117,7 @@ Index(['UDI', 'Product ID', 'Type', 'Air temperature [K]',
       dtype='object')
 ```
 
-## Output Data
+# Output Data
 
 ```python
 >>> output = pd.read_csv('output.csv')

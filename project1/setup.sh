@@ -7,7 +7,7 @@ cd feynn-labs/project1
 
 echo ""
 echo "Creating python virtual environment..."
-python -m venv .venv
+python3 -m venv .venv
 
 echo ""
 echo "Activating virtual environment..."
@@ -23,12 +23,12 @@ pip install -r requirements.txt
 
 echo ""
 echo "Traing the model..."
-python train.py
+python3 train.py
 
 echo ""
 echo "Testing the model..."
-python test.py
+python3 test.py
 
 echo ""
 echo "Opening Flask App..."
-python app.py
+python3 app.py
