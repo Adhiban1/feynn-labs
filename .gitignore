@@ -2,4 +2,5 @@ project1/__pycache__
 project1/.ipynb_checkpoints
 project1/.venv
 project1/models
-project1/uploaded
+project1/src/uploaded
+project1/src/__pycache__

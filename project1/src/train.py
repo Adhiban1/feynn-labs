@@ -22,8 +22,8 @@ best_model.fit(X_smote, y_smote)
 if not os.path.exists('models'):
     os.mkdir('models')
 
-if not os.path.exists('uploaded'):
-    os.mkdir('uploaded')
+if not os.path.exists('src/uploaded'):
+    os.mkdir('src/uploaded')
 
 with open('models/is_failure.pkl', 'wb') as f:
     pickle.dump(best_model, f)
