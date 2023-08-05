@@ -1,6 +1,5 @@
 @echo off
 
-cls
 echo "Git Cloning..."
 git clone --depth 1 https://github.com/Adhiban1/feynn-labs.git
 
@@ -26,15 +25,15 @@ pip install -r requirements.txt
 
 echo.
 echo "Training the model..."
-python train.py
+python src/train.py
 
 echo.
 echo "Testing the model..."
-python test.py
+python src/test.py
 
 echo.
 echo "Opening Flask App..."
-python app.py
+python src/app.py
 
 echo.
 echo "Deactivating virtual environment..."

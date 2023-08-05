@@ -45,7 +45,7 @@ pip install -r requirements.txt
 Run `train.py` this will train the model and save the models into `models` folder
 
 ```
-python train.py
+python src/train.py
 ```
 
 ## Test
@@ -53,7 +53,7 @@ python train.py
 Run `test.py` to verify saved models work well
 
 ```
-python test.py
+python src/test.py
 ```
 
 ## App
@@ -61,14 +61,16 @@ python test.py
 Run `app.py` to open Web app
 
 ```
-python app.py
+python src/app.py
 ```
 
 # Setup
 
-You can run above commands one by one or you can use `setup.sh` for linux or `setup.bat` for windows. You should modify the code in setup.sh or setup.bat file for your cases. And then run this one file this will download repository, change directory, creating virtual environment, activating virtual environment, upgrading pip, installing requirements, training the model, testing the model, opening Flask App.
+You can run above commands one by one or you can use `setup/setup.sh` for linux or `setup/setup.bat` for windows. You should modify the code in setup.sh or setup.bat file for your cases. And then run this one file this will download repository, change directory, creating virtual environment, activating virtual environment, upgrading pip, installing requirements, training the model, testing the model, opening Flask App.
 
-> Once you run `setup` file, then don't run again to open flask app. Just run `run.bat` for windows or `./run.sh` for linux or you can activate `.venv` manually and run `app.py`.
+> Once you run `setup` file, then don't run again to open flask app. Just run `run/run.bat` for windows or `.run/run.sh` for linux or you can activate `.venv` manually and run `app.py`.
+
+Download `setup` file and modify it according to your needs and run this.
 
 ## Windows
 
@@ -95,7 +97,7 @@ Cloning into 'feynn-labs'...
 ...
 ```
 
-![Screenshot1.jpg](Screenshot1.jpg)
+![images/Screenshot1.jpg](images/Screenshot1.jpg)
 
 # Input Data
 
