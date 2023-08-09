@@ -140,6 +140,6 @@ Index(['UDI', 'Product ID', 'Type', 'Air temperature [K]',
       dtype='object')
 ```
 
-Here `Failure Type`, `is_failure` columns are added in `output.csv`
+Here `failure_type`, `is_failure` columns are added in `output.csv`
 
 > I give the same training dataset to the Flask app to check whether it predicts correct or not. Thats why `Target`, `Failure Type` and other columns are displayed in the terminal output.
