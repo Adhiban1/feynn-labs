@@ -4,6 +4,8 @@
     <style>
         body {
             font-size: 120%;
+            background-color: black;
+            color: white;
         }
         input {
             font-size: 100%;
@@ -14,15 +16,42 @@
     <title>Document</title>
 </head>
 <body>
+    <button onclick="theme()" id="theme">Light mode</button>
     <center>
         <h1>Machine Predictive Maintenance</h1>
-        <p>Upload a csv file with these columns<br>['Type', 'Air temperature [K]',
-            'Process temperature [K]', 'Rotational speed [rpm]', 'Torque [Nm]',
-            'Tool wear [min]']</p>
+        <h2>Upload a csv file with these columns:</h2>
+        <div style="text-align: left; width: 300px;">
+            <ul>
+                <li>Type</li>
+                <li>Air temperature [K]</li>
+                <li>Process temperature [K]</li>
+                <li>Rotational speed [rpm]</li>
+                <li>Torque [Nm]</li>
+                <li>Tool wear [min]</li>
+            </ul>
+        </div>
         <form action="/" method="POST" enctype="multipart/form-data">
             <input type="file" name="file" id="file">
             <input type="submit" id="submit">
         </form>
     </center>
+    <script>
+        let mode = 'dark';
+        let theme_button = document.getElementById('theme');
+        function theme() {
+            console.log('theme()');
+            if (mode == 'dark') {
+                document.body.style.color = 'black';
+                document.body.style.background = 'white';
+                mode = 'light';
+                theme_button.innerText = 'Dark Mode';
+            } else {
+                document.body.style.color = 'white';
+                document.body.style.background = 'black';
+                mode = 'dark';
+                theme_button.innerText = 'Light Mode';
+            }
+        }
+    </script>
 </body>
 </html>
