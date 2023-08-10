@@ -6,6 +6,10 @@ echo "cd feynn-labs/project1..."
 cd feynn-labs/project1
 
 echo ""
+echo "Making run.sh as executable"
+chmod +x ./run/run.sh
+
+echo ""
 echo "Creating python virtual environment..."
 python3 -m venv .venv
 

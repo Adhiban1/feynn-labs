@@ -4,6 +4,8 @@ EDA and Machine Learning: [Jupyter Notebook](main.ipynb)
 
 Dataset link: [Kaggle Dataset](https://www.kaggle.com/datasets/shivamb/machine-predictive-maintenance-classification)
 
+![images/Flowchart2.png](images/Flowchart2.png)
+
 ## Download Repository
 
 ```
@@ -97,7 +99,13 @@ Cloning into 'feynn-labs'...
 ...
 ```
 
+Dark mode:
+
 ![images/Screenshot1.jpg](images/Screenshot1.jpg)
+
+Light mode:
+
+![images/Screenshot3.jpg](images/Screenshot3.jpg)
 
 # Input Data
 
