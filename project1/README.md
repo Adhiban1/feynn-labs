@@ -47,7 +47,7 @@ pip install -r requirements.txt
 Run `train.py` this will train the model and save the models into `models` folder
 
 ```
-python src/train.py
+python modules/train.py
 ```
 
 ## Test
@@ -55,7 +55,7 @@ python src/train.py
 Run `test.py` to verify saved models work well
 
 ```
-python src/test.py
+python modules/test.py
 ```
 
 ## App
@@ -63,7 +63,7 @@ python src/test.py
 Run `app.py` to open Web app
 
 ```
-python src/app.py
+python modules/app.py
 ```
 
 # Setup
