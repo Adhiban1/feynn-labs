@@ -1,8 +1,12 @@
 # Machine Predictive Maintenance for Industrial Machines
 
-EDA and Machine Learning: [Jupyter Notebook](main.ipynb) 
+## [Feynn Labs](https://www.linkedin.com/company/feynn-labs/?originalSubdomain=in) [Internship](https://feynnlabs.com/internships/) Project1
 
-Dataset link: [Kaggle Dataset](https://www.kaggle.com/datasets/shivamb/machine-predictive-maintenance-classification)
+- EDA and Machine Learning: [Jupyter Notebook](main.ipynb) 
+
+- [Kaggle Dataset](https://www.kaggle.com/datasets/shivamb/machine-predictive-maintenance-classification)
+
+- [Docker](https://hub.docker.com/r/adhiban/machine-predictive-maintenance)
 
 ![images/Flowchart2.png](images/Flowchart2.png)
 
