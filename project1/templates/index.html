@@ -48,7 +48,7 @@
 </head>
 
 <body>
-    <button onclick="theme()" id="theme" class="btn" style="width: 150px; border: none;">Light mode</button>
+    <button onclick="theme()" id="theme" class="btn" style="width: 150px; border: none;">Dark mode</button>
     <center>
         <div id="main_div">
             <h1>Machine Predictive Maintenance</h1>
@@ -81,13 +81,13 @@
             if (mode == 'dark') {
                 document.body.style.color = 'black';
                 mode = 'light';
-                theme_button.innerText = 'Dark Mode';
+                theme_button.innerText = 'Light Mode';
                 main_div.style.backgroundColor = 'white'
                 document.body.style.backgroundImage = `url('static/${light_image}')`;
             } else {
                 document.body.style.color = 'white';
                 mode = 'dark';
-                theme_button.innerText = 'Light Mode';
+                theme_button.innerText = 'Dark Mode';
                 main_div.style.backgroundColor = 'black'
                 document.body.style.backgroundImage = `url('static/${dark_image}')`;
             }

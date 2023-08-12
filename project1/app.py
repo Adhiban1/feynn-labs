@@ -8,15 +8,14 @@ app = Flask(__name__)
 def home():
     if request.method == 'POST':
         f = request.files['file']
-        f.save('uploaded/'+f.filename)
+        f.save('uploaded/input.csv')
 
-        df = pd.read_csv('uploaded/'+f.filename)
+        df = pd.read_csv('uploaded/input.csv')
 
-        df1 = is_failure(df)
-        df2 = failure_type(df)
-        
-        df['is_failure'] = df1
-        df['failure_type'] = df2
+        df['is_failure'] = is_failure(df)
+        df['failure_type'] = failure_type(df)
+
+        df = df[df['is_failure'] == 1]
 
         df.to_csv('uploaded/output.csv', index=False)
 
@@ -24,4 +23,4 @@ def home():
     return render_template('index.html')
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5000)
