@@ -105,11 +105,11 @@ Cloning into 'feynn-labs'...
 
 Dark mode:
 
-![images/Screenshot1.jpg](images/Screenshot1.jpg)
+![images/Screenshot4.png](images/Screenshot4.png)
 
 Light mode:
 
-![images/Screenshot3.jpg](images/Screenshot3.jpg)
+![images/Screenshot5.png](images/Screenshot5.png)
 
 # Input Data
 

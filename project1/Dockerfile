@@ -8,6 +8,7 @@ COPY models/ ./models/
 COPY templates/ ./templates/
 COPY uploaded/ ./uploaded/
 COPY modules/ ./modules/
+COPY static/ ./static/
 COPY app.py .
 
 CMD ["python3", "app.py"]
