@@ -155,3 +155,22 @@ Index(['UDI', 'Product ID', 'Type', 'Air temperature [K]',
 Here `failure_type`, `is_failure` columns are added in `output.csv`
 
 > I give the same training dataset to the Flask app to check whether it predicts correct or not. Thats why `Target`, `Failure Type` and other columns are displayed in the terminal output.
+
+# Docker
+
+[Docker image](https://hub.docker.com/r/adhiban/machine-predictive-maintenance)
+
+## Docker pull
+
+```
+docker pull adhiban/machine-predictive-maintenance:0.0.2
+```
+
+## Docker run
+
+```
+docker run -d -p 5000:5000 adhiban/machine-predictive-maintenance:0.0.2
+```
+
+Open it in browser `http://127.0.0.1:5000/`
+

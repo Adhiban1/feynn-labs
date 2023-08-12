@@ -1,5 +1,4 @@
-FROM python:3.10
-
+FROM python:slim-bullseye
 WORKDIR /app
 
 COPY requirements.txt requirements.txt
@@ -12,4 +11,4 @@ COPY modules/ ./modules/
 COPY app.py .
 
 CMD ["python3", "app.py"]
-expose 5000
+EXPOSE 5000
