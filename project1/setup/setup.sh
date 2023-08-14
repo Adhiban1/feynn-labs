@@ -27,15 +27,15 @@ pip install -r requirements.txt
 
 echo ""
 echo "Traing the model..."
-python3 src/train.py
+python3 modules/train.py
 
 echo ""
 echo "Testing the model..."
-python3 src/test.py
+python3 modules/test.py
 
 echo ""
 echo "Opening Flask App..."
-python3 src/app.py
+python3 app.py
 
 echo ""
 echo "Deactivating virtual environment..."
