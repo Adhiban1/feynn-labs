@@ -25,4 +25,4 @@
     - Study task: [Market-Segmentation-Analysis](https://github.com/Adhiban1/Market-Segmentation-Analysis) repo
     - Real World Project: [EV-Market-Segmentation](https://github.com/Adhiban1/EV-Market-Segmentation) repo
 
-3. Project 3: Continuation of project1
+3. [Project 3](https://github.com/Adhiban1/Smart-Industrial-Predictive-Solutions): Continuation of project1, Smart-Industrial-Predictive-Solutions
