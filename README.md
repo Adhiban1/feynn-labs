@@ -1,5 +1,7 @@
 # [Feynn Labs](https://www.linkedin.com/company/feynn-labs/?originalSubdomain=in) [Internship](https://feynnlabs.com/internships/) Projects
 
+![GitHub repo size](https://img.shields.io/github/repo-size/Adhiban1/feynn-labs)
+
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Machine Learning](https://img.shields.io/badge/Machine_Learning-blue?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Data Analysis](https://img.shields.io/badge/Data_Analysis-red?style=for-the-badge)
